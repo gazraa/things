@@ -12,6 +12,7 @@ A technical test for [Moonpig](https://github.com/Moonpig/tech-test-frontend)
 * Create simple responsive css.
 * Create basic styling css for app.
 
+<!--
 
 ## Available Scripts
 
@@ -55,3 +56,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+-->
