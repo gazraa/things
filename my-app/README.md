@@ -1,10 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Summary##
+## Summary
 
 A technical test for [Moonpig](https://github.com/Moonpig/tech-test-frontend)
 
-##Plan##
+## Plan
 
 * Set up basic bootstrapped react app.
 * Create component for card grid item.
