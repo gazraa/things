@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import CardGrid from './components/CardGrid';
 
 import './css/App.css';
+import './css/simple-grid.min.css';
 
 class App extends Component {
   render() {

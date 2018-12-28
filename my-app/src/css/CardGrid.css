@@ -1,0 +1,30 @@
+.CardGrid {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CardGrid > div {
+    
+}
+.card-item-container {
+    display: flex;
+    flex-wrap: column;
+    flex-basis: 200px;
+    margin: 0 10px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.card-item .card-item-image-container {
+    width: 100%;
+    min-height: 300px;
+}
+.card-item img {
+    width: 100%;
+}
