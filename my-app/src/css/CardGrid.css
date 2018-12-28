@@ -4,27 +4,27 @@
     align-items: center;
     justify-content: center;
 }
-.CardGrid > div {
-    
-}
+
 .card-item-container {
     display: flex;
     flex-wrap: column;
-    flex-basis: 200px;
-    margin: 0 10px;
+    flex-basis: 250px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
 }
 
 .card-item {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-bottom: 20px;
+    margin: 0 10px;
 }
 
 .card-item .card-item-image-container {
     width: 100%;
-    min-height: 300px;
+    min-height: 330px;
 }
 .card-item img {
-    width: 100%;
+    width: 230px;
 }

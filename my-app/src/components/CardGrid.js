@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import ReviewStars from './ReviewStars';
+
 import '../css/CardGrid.css';
 
 class CardGrid extends Component {
@@ -17,19 +19,26 @@ class CardGrid extends Component {
       });
   }
 
+  cardDetail(e) {
+    e.preventDefault();
+    
+    document.getElementById('CardDetail').classList.add('show');
+
+  }
+
   render() {
     return (
+
       <div className="CardGrid">
         {this.state.cards.map(card =>
           <div className="card-item-container" key={card.ProductId}>
             <div className="card-item">
               <div className="card-item-image-container">
-                <img src={card.ProductImage.Link.Href} alt={card.Title} />
+                <a href="" onClick={this.cardDetail}>
+                  <img src={card.ProductImage.Link.Href} alt={card.Title} />
+                </a>
               </div>
-              <div className="card-item-reviews">
-                stars ({card.Reviews.ReviewCount})
-              </div>
-              
+              <ReviewStars reviewRating={card.Reviews.AverageStarReviewRating} reviewCount={card.Reviews.ReviewCount} />             
             </div>
           </div>
         )}
