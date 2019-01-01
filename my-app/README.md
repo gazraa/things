@@ -7,10 +7,19 @@ A technical test for [Moonpig](https://github.com/Moonpig/tech-test-frontend)
 ## Plan
 
 * Set up basic bootstrapped react app.
-* Create component for card grid item.
-* Create component for card detail.
-* Create simple responsive css.
-* Create basic styling css for app.
+* Create component blocks.
+* Add flex box css for layout.
+
+## Proof of concept
+
+This react app gives the user the basic functionality that was required which can be built on to flesh out more detail. The user stories are satisfied so a user can view a list of available and select a card to get further detail on it and choose to purchase it.
+
+## Next steps
+
+* mobile layout needs some refining, especially for landscape orientation.
+* better messaging to the user is needed for error handling around the API requests.
+* axios as a way of getting the data should be reviewed against alternatives, but it does the job well.
+* more componentisation of the code and css should be done to help it scale better and allow more code reuse across the wider app.
 
 <!--
 
