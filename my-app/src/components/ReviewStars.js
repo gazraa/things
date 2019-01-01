@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../css/ReviewStars.css';
+import '../css/ReviewStars.scss';
 
 class ReviewStars extends Component {
 

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import ReviewStars from './ReviewStars';
 
-import '../css/CardGrid.css';
+import '../css/CardGrid.scss';
 
 class CardGrid extends Component {
 
@@ -20,6 +20,11 @@ class CardGrid extends Component {
         const cards = res.data.Products;
         this.setState({ cards });
       });
+  }
+
+  hideDetail(e){
+    document.getElementById('CardDetailModal').classList.remove('show');
+    document.getElementById('CardDetailModal').classList.add('hide');
   }
 
   cardDetail(c,e){
@@ -40,16 +45,22 @@ class CardGrid extends Component {
 
         ReactDOM.render(
           <Fragment>
-            <div className="card-detail-image">Image</div>
-            <div className="card-detail-information">
-              <h2>{ cardDetail.Title }</h2>
-              <div className="card-detail-information-description">Description</div>
-              <div className="card-detail-information-button-buy"><button>Personalise &amp; Send</button></div>
+            <div className="card-detail-header"><button onClick={(e) => this.hideDetail(e)}>X</button></div>
+            <div className="card-detail-content">
+              <div className="card-detail-image"><img src={ cardDetail.ImageUrls[0].ImageUrl } alt={cardDetail.Title } /></div>
+              <div className="card-detail-information">
+                <h2>{ cardDetail.Title }</h2>
+                <div className="card-detail-information-description" contentEditable='false' dangerouslySetInnerHTML={{ __html: cardDetail.Description }}></div>
+                <div className="card-detail-information-button-buy"><button>Personalise &amp; Send</button></div>
+              </div>
             </div>
           </Fragment>
           ,
           document.getElementById('CardDetail')
         );
+
+        document.getElementById('CardDetailModal').classList.add('show');
+        document.getElementById('CardDetailModal').classList.remove('hide');
 
       }
       .bind(this))
@@ -83,7 +94,7 @@ class CardGrid extends Component {
   render() {
     return (
       <Fragment>
-        <div className="CardGrid">
+        <div id="CardGrid" className="card-grid">
           {this.state.cards.map(card =>
             <div className="card-item-container" key={card.MoonpigProductNo}>
               <div className="card-item">
@@ -97,8 +108,9 @@ class CardGrid extends Component {
             </div>
           )}
         </div>
-        <div id="CardDetail">
-          
+        <div id="CardDetailModal" className="card-detail-modal">
+          <div id="CardDetail" className="card-detail-container">
+          </div>
         </div>
       </Fragment>
     )
