@@ -89,7 +89,7 @@ class CardGrid extends Component {
         ReactDOM.render(
           <Fragment>
             <div className="card-detail-header">
-              <button onClick={(e) => this.hideDetail(e)}>X</button>
+              <button onClick={(e) => this.hideDetail(e)}>&#215;</button>
             </div>
             <div className="card-detail-content">
               <div className="card-detail-image">

@@ -6,33 +6,37 @@
     .card-item-reviews-stars {
         unicode-bidi: bidi-override;
         color: #c5c5c5;
-        font-size: 20px;
+        font-size: 23px;
         height: 20px;
         width: 100px;
         margin: 0;
         position: relative;
         padding: 0;
         text-shadow: 0px 1px 0 #a2a2a2;
-        
+
         &-top {
-        color: #e7711b;
-        padding: 0;
-        position: absolute;
-        z-index: 1;
-        display: block;
-        top: 0;
-        left: 0;
-        overflow: hidden;
+            color: #e7711b;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            display: block;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            text-align: left;
         }
         &-bottom {
-        padding: 0;
-        display: block;
-        z-index: 0;
+            padding: 0;
+            display: block;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            text-align: left;
         }
     }
 
     .card-item-reviews-count {
-        font-size: 20px;
+        font-size: 23px;
         margin-left: 10px;
     }
 
