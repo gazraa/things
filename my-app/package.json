@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gazraa.github.io/things/my-app/",
+  "homepage": "https://gazraa.github.io/things/",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
