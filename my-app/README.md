@@ -20,6 +20,8 @@ This react app gives the user the basic functionality that was required which ca
 * better messaging to the user is needed for error handling around the API requests.
 * axios as a way of getting the data should be reviewed against alternatives, but it does the job well.
 * more componentisation of the code and css should be done to help it scale better and allow more code reuse across the wider app.
+* app testing
+
 
 <!--
 

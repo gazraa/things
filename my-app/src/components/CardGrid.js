@@ -21,6 +21,7 @@ class CardGrid extends Component {
       .then(response => {
         const cards = response.data.Products;
         this.setState({ cards });
+        
       })
       .catch(function (error) {
         if (error.response) {    
